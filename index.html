@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
 </head>
 <body>
-    <button>Click</button>    <!--button with click text inside it -->
-    <br>
-    <br>
-    <button>Krishna teja</button>
-    <button>Biryani</button>
-    <p> Hello World</p>
-    <p2>Today i have practiced some basic concepts of html</p2><br>
-    <br>
-    <br>
-    <a href="https://www.google.com/" target="_blank">search with google</a>
-    <br>
-    <br>
-    <br>
-    <a href="https://www.amazon.in/" target="_blank">back to amazon</a>
-    <p>Nike runnig black shoe</p>
-    <p>$ 39 - in stock </p>
-    <p>Free delivery tomorrow</p>
-    <button>add to cart</button>
-    <button>buy now</button>
+  <button class="one" 
+  onclick="console.log(`quantity:${c}`)" >
+    show quantity
+  </button>
+  <button onclick="
+  c=c+1;
+  console.log(`quantity:${c}`)">
+    add to cart
+  </button>
+  <button onclick="
+  c=c+2;
+  console.log(`quantity:${c}`)">
+    +2
+  </button>
+  <button onclick="
+  c=c+3;
+  console.log(`quantity:${c}`)">
+    +3
+  </button>
+  <button onclick="
+  c=0;
+  console.log(`quantity:${c}`)">
+    reset
+  </button>
+
+  <button onclick="
+  const randomNumber=Math.random();
+  if(randomNumber >=0 && randomNumber<= 1/3){
+    console.log('Rock win')
+  }
+  else{
+    console.log('computer choose paper and won')
+  }
+  ">
+    Rock
+  </button>
+  <button onclick="
+  const randomNumber=Math.random();
+  if(randomNumber >=1/3 && randomNumber<= 2/3){
+    console.log('paper win')
+  }
+  else{
+    console.log('computer choose scissor and won')
+  }
+  ">
+    paper
+  </button>
+  <button onclick="
+  const randomNumber=Math.random();
+  if(randomNumber >=2/3 && randomNumber<= 1){
+    console.log('scissor win')
+  }
+  else{
+    console.log('computer choose rock and won')
+  }
+  ">
+    scissor
+  </button>
+  <script>
+   // alert('hello')
+  let c=0;
+  </script>
 </body>
 </html>
